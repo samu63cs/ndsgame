@@ -1597,13 +1597,13 @@ https://archive.org/download/nds-romset/Margot%27s%20Word%20Brain%20%28Europe%29
 https://archive.org/download/nds-romset/Marie-Antoinette%20and%20the%20American%20War%20of%20Independence%20-%20Episode%201%20-%20The%20Brotherhood%20of%20the%20Wolf%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|Marie-Antoinette and the American War of Independence - Episode 1 - The Brotherhood of the Wolf (Europe) (En,Fr,De,Es,It)
 https://archive.org/download/nds-romset/Marie-Antoinette%20and%20the%20Disciples%20of%20Loki%20%28Europe%29%20%28En%2CFr%2CDe%29.nds.7z|Marie-Antoinette and the Disciples of Loki (Europe) (En,Fr,De)
 https://archive.org/download/nds-romset/Mario%20%26%20Luigi%20-%20Bowser%27s%20Inside%20Story%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28Demo%29%20%28Kiosk%29.nds.7z|Mario & Luigi - Bowser's Inside Story (Europe) (En,Fr,De,Es,It) (Demo) (Kiosk)
-https://archive.org/download/nds-romset/Mario%20%26%20Luigi%20-%20Bowser%27s%20Inside%20Story%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|Mario & Luigi - Bowser's Inside Story (Europe) (En,Fr,De,Es,It)
+https://archive.org/download/nds-romset/Mario%20%26%20Luigi%20-%20Bowser%27s%20Inside%20Story%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|Mario & Luigi - Bowser's Inside Story
 https://archive.org/download/nds-romset/Mario%20%26%20Luigi%20-%20Partners%20in%20Time%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28Demo%29%20%28Kiosk%29.nds.7z|Mario & Luigi - Partners in Time (Europe) (En,Fr,De,Es,It) (Demo) (Kiosk)
-https://archive.org/download/nds-romset/Mario%20%26%20Luigi%20-%20Partners%20in%20Time%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|Mario & Luigi - Partners in Time (Europe) (En,Fr,De,Es,It)
+https://archive.org/download/nds-romset/Mario%20%26%20Luigi%20-%20Partners%20in%20Time%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|Mario & Luigi - Partners in Time
 https://archive.org/download/nds-romset/Mario%20%26%20Sonic%20at%20the%20Olympic%20Games%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|Mario & Sonic at the Olympic Games (Europe) (En,Fr,De,Es,It)
 https://archive.org/download/nds-romset/Mario%20%26%20Sonic%20at%20the%20Olympic%20Winter%20Games%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|Mario & Sonic at the Olympic Winter Games (Europe) (En,Fr,De,Es,It)
 https://archive.org/download/nds-romset/Mario%20Kart%20DS%20%28Europe%29%20%28Demo%29%20%28Kiosk%2C%20Multiplayer%29.nds.7z|Mario Kart DS (Europe) (Demo) (Kiosk, Multiplayer)
-https://archive.org/download/nds-romset/Mario%20Kart%20DS%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|Mario Kart DS (Europe) (En,Fr,De,Es,It)
+https://archive.org/download/nds-romset/Mario%20Kart%20DS%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|Mario Kart DS
 https://archive.org/download/nds-romset/Mario%20Party%20DS%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28Rev%201%29.nds.7z|Mario Party DS (Europe) (En,Fr,De,Es,It) (Rev 1)
 https://archive.org/download/nds-romset/Mario%20Party%20DS%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|Mario Party DS (Europe) (En,Fr,De,Es,It)
 https://archive.org/download/nds-romset/Mario%20Slam%20Basketball%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28Demo%29%20%28Kiosk%29.nds.7z|Mario Slam Basketball (Europe) (En,Fr,De,Es,It) (Demo) (Kiosk)
@@ -1921,7 +1921,7 @@ https://archive.org/download/nds-romset/New%20Carnival%20-%20Funfair%20Games%20%
 https://archive.org/download/nds-romset/New%20International%20Track%20%26%20Field%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|New International Track & Field (Europe) (En,Fr,De,Es,It)
 https://archive.org/download/nds-romset/New%20Super%20Mario%20Bros.%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28Demo%29%20%28Kiosk%29.nds.7z|New Super Mario Bros. (Europe) (En,Fr,De,Es,It) (Demo) (Kiosk)
 https://archive.org/download/nds-romset/New%20Super%20Mario%20Bros.%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29%20%28Demo%29%20%28Kiosk%2C%20Y78P%29.nds.7z|New Super Mario Bros. (Europe) (En,Fr,De,Es,It) (Demo) (Kiosk, Y78P)
-https://archive.org/download/nds-romset/New%20Super%20Mario%20Bros.%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|New Super Mario Bros. (Europe) (En,Fr,De,Es,It)
+https://archive.org/download/nds-romset/New%20Super%20Mario%20Bros.%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|New Super Mario Bros.
 https://archive.org/download/nds-romset/New%20Touch%20Party%20Game%20%28Europe%29.nds.7z|New Touch Party Game (Europe)
 https://archive.org/download/nds-romset/New%20York%20Times%20Crosswords%2C%20The%20%28Europe%29.nds.7z|New York Times Crosswords, The (Europe)
 https://archive.org/download/nds-romset/New%20Zealand%20Story%20Revolution%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.nds.7z|New Zealand Story Revolution (Europe) (En,Fr,De,Es,It)
