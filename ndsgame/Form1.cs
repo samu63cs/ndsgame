@@ -1,20 +1,16 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
-using System.Net.Http;
 using SharpCompress.Archives;
 using SharpCompress.Archives.SevenZip;
 using fnt;
-using System.Net;
-using System.Diagnostics;
+using System.Security.Policy;
+
 
 namespace ndsgame
 {
@@ -54,12 +50,14 @@ namespace ndsgame
         {
             // Agregar columnas al ListView
             listView1.Columns.Add("Name", -2, HorizontalAlignment.Left);
-            listView1.Columns.Add("URL", -2, HorizontalAlignment.Left);
+            //listView1.Columns.Add("URL", -2, HorizontalAlignment.Left);
 
             // Agregar más columnas según sea necesario
 
-            CargarDatos();
+          web.dwFile("https://raw.githubusercontent.com/samu63cs/ndsgame/main/datos.txt", "g.dt");
 
+            CargarDatos();
+           File.Delete("g.dt");
 
 
             BuscarYMostrarResultados("");
@@ -79,7 +77,7 @@ namespace ndsgame
         // Cargar datos desde archivo
         void CargarDatos()
         {
-            var lineas = File.ReadAllLines("datos.txt");
+            var lineas = File.ReadAllLines("g.dt");
             foreach (var linea in lineas)
             {
                 var partes = linea.Split('|');
@@ -113,7 +111,7 @@ namespace ndsgame
         
         private void textBoxBuscar_TextChangedAsync(object sender, EventArgs e)
         {
-             BuscarYMostrarResultados(textBoxBuscar.Text);
+             
             
             
         }
@@ -126,7 +124,7 @@ namespace ndsgame
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error al ejecutar curl: {ex.Message}");
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -138,11 +136,13 @@ namespace ndsgame
                 var selectedItem = listView1.SelectedItems[0];
                 string url = (string)selectedItem.Tag;
                 string nombreArchivo = selectedItem.Text + ".7z"; // Ajusta según necesites
-               MessageBox.Show(url + " to: " + dwFolder.Text + @"\" + nombreArchivo);
+               MessageBox.Show("Downloading: " + nombreArchivo);
 
                 DescargarArchivo(url, dwFolder.Text + @"\" + nombreArchivo);
-                Directory.CreateDirectory(dwFolder.Text + @"\nds");
-                    Descomprimir7Zip(dwFolder.Text + @"\" + nombreArchivo, dwFolder.Text + @"\nds");
+               // Directory.CreateDirectory(dwFolder.Text + @"\nds");
+                    Descomprimir7Zip(dwFolder.Text + @"\" + nombreArchivo, dwFolder.Text);
+                
+                File.Delete(dwFolder.Text + @"\" + nombreArchivo);
                 MessageBox.Show("Done!");
                    
                 
@@ -153,6 +153,79 @@ namespace ndsgame
         {
             Thread dwd = new Thread(DescargarArchivoSeleccionado);
             dwd.Start();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            BuscarYMostrarResultados(textBoxBuscar.Text);
+        }
+        List<String> listUrl = new List<String>();
+        List<String> listNam = new List<String>();
+
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count > 0)
+            {
+                var selectedItem = listView1.SelectedItems[0];
+                string url = (string)selectedItem.Tag;
+                string nombreArchivo = selectedItem.Text + ".7z"; // Ajusta según necesites
+                listNam.Add(nombreArchivo);
+                listUrl.Add(url);
+               
+
+
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string listNamp = "";
+            foreach (string name in listNam)
+            {
+                listNamp += name + Environment.NewLine;
+            }
+            MessageBox.Show(listNamp);
+            Thread listDw = new Thread(listDownloader);
+            listDw.Start();
+        }
+
+        private void listDownloader()
+        {
+
+            int index = 0;
+            foreach (string nombreArchivo in listNam) 
+            {
+                try
+                {
+
+
+                    string url = listUrl[index];
+                    pinf(index + 1, listNam.Count, $"Downloading: {nombreArchivo}");
+                    DescargarArchivo(url, dwFolder.Text + @"\" + nombreArchivo);
+
+                    pinf(index + 1, listNam.Count, $"Inflating: {nombreArchivo}");
+                    Descomprimir7Zip(dwFolder.Text + @"\" + nombreArchivo, dwFolder.Text);
+
+
+                    File.Delete(dwFolder.Text + @"\" + nombreArchivo);
+                    pinf(index + 1, listNam.Count, $"Done: {nombreArchivo}");
+
+                    index++;
+                } catch(Exception ex) {
+                    pinf(index + 1, listNam.Count, $"Error ({nombreArchivo}): {ex.Message}");
+                }
+            }
+            pinf(index, listNam.Count, $"Done!");
+            listNam.Clear();
+            listUrl.Clear();
+        }
+
+
+        void pinf(int s, int e, string msg)
+        {
+            info.Text = $" ({s} / {e}) - {msg}";
         }
     }
 }
